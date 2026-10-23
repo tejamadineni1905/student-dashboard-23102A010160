@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard - Poorna Tejitha</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#8b0000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    margin:20px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#8b0000;
+    margin-bottom:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+table th, table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+table th{
+    background:#8b0000;
+    color:white;
+}
+
+.login-box{
+    background:#ffffff;
+    border-left:5px solid #8b0000;
+}
+
+.status-complete{
+    color:green;
+    font-weight:bold;
+}
+
+.status-pending{
+    color:orange;
+    font-weight:bold;
+}
+
+.footer{
+    text-align:center;
+    padding:15px;
+    background:#8b0000;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MOHAN BABU UNIVERSITY</h1>
+    <h3>Student Dashboard</h3>
+</header>
+
+<div class="container">
+
+    <div class="card login-box">
+        <h2>🔐 Student Login</h2>
+        <p><strong>Username:</strong> 23102A010160</p>
+        <p><strong>Password:</strong> TEJU@160</p>
+    </div>
+
+    <div class="card">
+        <h2>👩‍🎓 Student Profile</h2>
+        <p><strong>Name:</strong> Poorna Tejitha Madinenei</p>
+        <p><strong>ID:</strong> 23102A010160</p>
+        <p><strong>Email:</strong> teju@gmail.com</p>
+        <p><strong>Department:</strong> CSE (AI & ML)</p>
+        <p><strong>Batch:</strong> 2023 - 2027</p>
+        <p><strong>Current Semester:</strong> VII Semester</p>
+    </div>
+
+    <div class="card">
+        <h2>📊 Attendance</h2>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Attended</th>
+                <th>Total Classes</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>Generative AI</td>
+                <td>33</td>
+                <td>39</td>
+                <td>84.62%</td>
+            </tr>
+            <tr>
+                <td>SDA</td>
+                <td>35</td>
+                <td>36</td>
+                <td>97.22%</td>
+            </tr>
+            <tr>
+                <td>Data Science</td>
+                <td>60</td>
+                <td>68</td>
+                <td>88.24%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>📝 Assignments</h2>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Assignment</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Generative AI</td>
+                <td>Student Dashboard & Portfolio</td>
+                <td class="status-complete">Completed ✅</td>
+            </tr>
+            <tr>
+                <td>Data Science</td>
+                <td>Time Series Analysis</td>
+                <td class="status-pending">Pending ⏳</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>📅 Exam Schedule</h2>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Generative AI</td>
+                <td>12 Nov 2026</td>
+            </tr>
+            <tr>
+                <td>SDA</td>
+                <td>12 Nov 2026</td>
+            </tr>
+            <tr>
+                <td>Data Science</td>
+                <td>13 Nov 2026</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>📚 Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>08:00-08:55</th>
+                <th>08:55-09:50</th>
+                <th>09:50-10:45</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>SDA</td>
+                <td>SDA</td>
+                <td>DS</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>DS</td>
+                <td>GAI</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>DS LAB</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>DS</td>
+                <td>GAI</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>SDA</td>
+                <td>GAI</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>🎉 Indian Holidays 2026</h2>
+        <ul>
+            <li>Republic Day - 26 Jan 2026</li>
+            <li>Maha Shivaratri - 15 Feb 2026</li>
+            <li>Holi - 03 Mar 2026</li>
+            <li>Ugadi - 19 Mar 2026</li>
+            <li>Independence Day - 15 Aug 2026</li>
+            <li>Gandhi Jayanti - 02 Oct 2026</li>
+            <li>Dussehra - 20 Oct 2026</li>
+            <li>Deepavali - 08 Nov 2026</li>
+            <li>Christmas - 25 Dec 2026</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>💰 Billing Information</h2>
+        <p><strong>Total Fee:</strong> ₹2,25,000</p>
+        <p><strong>Status:</strong> ✅ Settled</p>
+        <p><strong>Balance Due:</strong> ₹0</p>
+    </div>
+
+    <div class="card">
+        <h2>📄 Revaluation</h2>
+        <p>Revaluation is currently unavailable.</p>
+        <p>Students can apply after semester examination results are announced.</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 Mohan Babu University | Student Dashboard</p>
+</div>
+
+</body>
+</html>
