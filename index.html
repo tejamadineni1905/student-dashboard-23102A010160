@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard - Poorna Tejitha Madineni</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+header{
+background:linear-gradient(135deg,#8B0000,#c62828);
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.container{
+display:grid;
+grid-template-columns:260px 1fr;
+min-height:100vh;
+}
+
+.sidebar{
+background:#1f2937;
+color:white;
+padding:20px;
+}
+
+.sidebar h2{
+margin-bottom:20px;
+text-align:center;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+padding:12px;
+margin-bottom:10px;
+background:#374151;
+border-radius:8px;
+}
+
+.content{
+padding:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:20px;
+margin-bottom:20px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.stat{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.progress{
+background:#ddd;
+height:10px;
+border-radius:30px;
+margin-top:10px;
+}
+
+.bar{
+height:10px;
+border-radius:30px;
+background:#22c55e;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th{
+background:#8B0000;
+color:white;
+padding:10px;
+}
+
+td{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.completed{
+color:green;
+font-weight:bold;
+}
+
+.pending{
+color:orange;
+font-weight:bold;
+}
+
+.footer{
+text-align:center;
+background:#8B0000;
+color:white;
+padding:15px;
+margin-top:20px;
+border-radius:10px;
+}
+
+@media(max-width:768px){
+.container{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🎓 MOHAN BABU UNIVERSITY</h1>
+<p>Student Dashboard Portal</p>
+</header>
+
+<div class="container">
+
+<div class="sidebar">
+<h2>📚 Menu</h2>
+<ul>
+<li>🏠 Dashboard</li>
+<li>📊 Attendance</li>
+<li>📝 Assignments</li>
+<li>📅 Exams</li>
+<li>⏰ Timetable</li>
+<li>🎉 Holidays</li>
+<li>💰 Billing</li>
+<li>📄 Revaluation</li>
+</ul>
+</div>
+
+<div class="content">
+
+<div class="card profile">
+
+<div>
+<h2>Poorna Tejitha Madineni</h2>
+<br>
+<p><b>ID:</b> 23102A010160</p>
+<p><b>Email:</b> tejamadineni1905gmail.com</p>
+<p><b>Program:</b> CSE (AI & ML)</p>
+<p><b>Batch:</b> 2023 - 2027</p>
+<p><b>Semester:</b> VII Semester</p>
+</div>
+
+<div>
+<h3>🔐 Student Login</h3>
+<br>
+<p><b>Username:</b> 23102A010160</p>
+<p><b>Password:</b> TEJU@160</p>
+</div>
+
+</div>
+
+<h2>📊 Attendance</h2>
+<br>
+
+<div class="stats">
+
+<div class="stat">
+<h3>GEN AI</h3>
+<p>33 / 39</p>
+<div class="progress">
+<div class="bar" style="width:84.62%;"></div>
+</div>
+<p>84.62%</p>
+</div>
+
+<div class="stat">
+<h3>SDA</h3>
+<p>35 / 36</p>
+<div class="progress">
+<div class="bar" style="width:97.22%;"></div>
+</div>
+<p>97.22%</p>
+</div>
+
+<div class="stat">
+<h3>DS</h3>
+<p>60 / 68</p>
+<div class="progress">
+<div class="bar" style="width:88.24%;"></div>
+</div>
+<p>88.24%</p>
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+<h2>📝 Assignments</h2>
+
+<table>
+<tr>
+<th>Subject</th>
+<th>Assignment</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>GEN AI</td>
+<td>Student Dashboard & Portfolio</td>
+<td class="completed">Completed ✅</td>
+</tr>
+
+<tr>
+<td>DS</td>
+<td>Time Series Analysis</td>
+<td class="pending">Pending ⏳</td>
+</tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>📅 Exam Schedule</h2>
+
+<table>
+<tr>
+<th>Subject</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>GEN AI</td>
+<td>12 Nov 2026</td>
+</tr>
+
+<tr>
+<td>SDA</td>
+<td>12 Nov 2026</td>
+</tr>
+
+<tr>
+<td>DS</td>
+<td>13 Nov 2026</td>
+</tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>⏰ Timetable</h2>
+
+<table>
+<tr>
+<th>Day</th>
+<th>08:00-08:55</th>
+<th>08:55-09:50</th>
+<th>09:50-10:45</th>
+</tr>
+
+<tr>
+<td>Monday</td>
+<td>SDA</td>
+<td>SDA</td>
+<td>DS</td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td>DS</td>
+<td>GAI</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td>DS LAB</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td>DS</td>
+<td>GAI</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td>SDA</td>
+<td>GAI</td>
+<td>-</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+<h2>🎉 Indian Holidays 2026</h2>
+
+<ul style="padding-left:20px;">
+<li>Republic Day - 26 January</li>
+<li>Maha Shivaratri - 15 February</li>
+<li>Holi - 03 March</li>
+<li>Ugadi - 19 March</li>
+<li>Independence Day - 15 August</li>
+<li>Gandhi Jayanti - 02 October</li>
+<li>Dussehra - 20 October</li>
+<li>Deepavali - 08 November</li>
+<li>Christmas - 25 December</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>💰 Billing</h2>
+<h1 style="color:green">₹2,25,000</h1>
+<p><b>Status:</b> Settled ✅</p>
+</div>
+
+<div class="card">
+<h2>📄 Revaluation</h2>
+<p>Revaluation applications are not available currently.</p>
+<p>After semester exams and result declaration, students can apply for revaluation
